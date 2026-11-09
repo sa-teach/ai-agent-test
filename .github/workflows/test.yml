@@ -1,0 +1,21 @@
+name: Run Code Tests
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Check if README exists and is not empty
+        run: |
+          if [ -s README.md ]; then
+            echo "README.md is valid and has content."
+          else
+            echo "README.md is missing or empty!"
+            exit 1
+          fi
