@@ -144,11 +144,10 @@ During the experiment, this approach avoided update races and merge conflicts wh
 
 ```text
 README.md
-TEST-LOG.md
+git-automerge-loop.ps1
 docs/
-├── research/
 ├── architecture/
-└── examples/
+└── research/TEST-LOG.md
 ```
 
 ---
@@ -201,7 +200,7 @@ docs/
 
 The original stress-test documentation is maintained separately:
 
-- **TEST-LOG.md**
+- **docs\research\TEST-LOG.md**
 
 This file contains the experiment history, observations, metrics, and technical notes collected during the 1,035 Pull Request Auto Merge test.
 
@@ -352,11 +351,10 @@ main
 
 ```text
 README.md
-TEST-LOG.md
+git-automerge-loop.ps1
 docs/
-├── research/
 ├── architecture/
-└── examples/
+└── research/TEST-LOG.md
 ```
 
 ---
@@ -409,6 +407,6 @@ docs/
 
 История возникновения проекта и результаты нагрузочного тестирования вынесены в отдельный файл:
 
-- **TEST_LOG.md**
+- **docs\research\TEST-LOG.md**
 
 Там находится подробная информация о проведённом эксперименте с 1035 Pull Request, используемой стратегии и полученных результатах.
